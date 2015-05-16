@@ -7,9 +7,10 @@
 //
 
 import UIKit
+import CoreData
 
 class GroupListViewController: UIViewController {
-    var groups: [Group] {
+    var groups: [Group]? {
         didSet {
             
         }
@@ -17,8 +18,9 @@ class GroupListViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        groups = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext!.executeFetchRequest(NSFetchRequest(entityName: "Group"), error: nil) as? [Group]
 
-        // Do any additional setup after loading the view.
     }
 
     /*
