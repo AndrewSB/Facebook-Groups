@@ -40,7 +40,7 @@ class GroupListViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    @IBAction func unwindToGroupList(segue: UIStoryboardSegue) {}
 }
 
 extension GroupListViewController: UITableViewDataSource, UITableViewDelegate {

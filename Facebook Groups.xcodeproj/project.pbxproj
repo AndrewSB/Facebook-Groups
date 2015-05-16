@@ -20,6 +20,8 @@
 		464E8ED31B07FDE400AF0ADD /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464E8ED01B07FDE400AF0ADD /* Comment.swift */; };
 		464E8ED41B07FDE400AF0ADD /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464E8ED11B07FDE400AF0ADD /* Group.swift */; };
 		464E8ED51B07FDE400AF0ADD /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464E8ED21B07FDE400AF0ADD /* Post.swift */; };
+		464E8ED71B07FEF400AF0ADD /* AddGroupTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464E8ED61B07FEF400AF0ADD /* AddGroupTableViewController.swift */; };
+		464E8ED91B08019500AF0ADD /* ArrayExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464E8ED81B08019500AF0ADD /* ArrayExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		464E8ED01B07FDE400AF0ADD /* Comment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Comment.swift; path = "Facebook Groups.xcodeproj/../Comment.swift"; sourceTree = SOURCE_ROOT; };
 		464E8ED11B07FDE400AF0ADD /* Group.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Group.swift; path = "Facebook Groups.xcodeproj/../Group.swift"; sourceTree = SOURCE_ROOT; };
 		464E8ED21B07FDE400AF0ADD /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Post.swift; path = "Facebook Groups.xcodeproj/../Post.swift"; sourceTree = SOURCE_ROOT; };
+		464E8ED61B07FEF400AF0ADD /* AddGroupTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddGroupTableViewController.swift; sourceTree = "<group>"; };
+		464E8ED81B08019500AF0ADD /* ArrayExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				464E8E621B07EB2400AF0ADD /* Main.storyboard */,
+				464E8ED61B07FEF400AF0ADD /* AddGroupTableViewController.swift */,
 				464E8EB81B07EE6700AF0ADD /* GroupListViewController.swift */,
 				464E8EBA1B07EE6F00AF0ADD /* GroupViewController.swift */,
 				464E8ECE1B07FC1D00AF0ADD /* PostViewController.swift */,
@@ -132,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				464E8ECC1B07F90000AF0ADD /* CircularImageView.swift */,
+				464E8ED81B08019500AF0ADD /* ArrayExtension.swift */,
 			);
 			name = Library;
 			sourceTree = "<group>";
@@ -206,8 +212,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				464E8ED71B07FEF400AF0ADD /* AddGroupTableViewController.swift in Sources */,
 				464E8ED41B07FDE400AF0ADD /* Group.swift in Sources */,
 				464E8ECF1B07FC1D00AF0ADD /* PostViewController.swift in Sources */,
+				464E8ED91B08019500AF0ADD /* ArrayExtension.swift in Sources */,
 				464E8EBB1B07EE6F00AF0ADD /* GroupViewController.swift in Sources */,
 				464E8E811B07EBFD00AF0ADD /* LoginViewController.swift in Sources */,
 				464E8ED31B07FDE400AF0ADD /* Comment.swift in Sources */,
