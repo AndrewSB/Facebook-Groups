@@ -115,7 +115,7 @@
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Oec-Pc-J3B">
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Oec-Pc-J3B">
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -149,10 +149,10 @@
             </objects>
             <point key="canvasLocation" x="1339" y="552"/>
         </scene>
-        <!--View Controller-->
+        <!--Post View Controller-->
         <scene sceneID="DNY-yg-o78">
             <objects>
-                <viewController id="zWt-Ke-bFA" sceneMemberID="viewController">
+                <viewController id="zWt-Ke-bFA" customClass="PostViewController" customModule="Facebook_Groups" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="EfT-Tc-dwt"/>
                         <viewControllerLayoutGuide type="bottom" id="uRK-Fh-8DB"/>
@@ -300,6 +300,9 @@
                         </constraints>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <connections>
+                        <outlet property="postTableView" destination="vMA-GI-wXB" id="sue-zw-Wny"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c9L-iB-09W" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

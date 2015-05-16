@@ -17,6 +17,7 @@
 		464E8EC61B07F2C800AF0ADD /* Facebook_Groups.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 464E8EC41B07F2C800AF0ADD /* Facebook_Groups.xcdatamodeld */; };
 		464E8EC81B07F30700AF0ADD /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464E8EC71B07F30700AF0ADD /* Group.swift */; };
 		464E8ECD1B07F90000AF0ADD /* CircularImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464E8ECC1B07F90000AF0ADD /* CircularImageView.swift */; };
+		464E8ECF1B07FC1D00AF0ADD /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464E8ECE1B07FC1D00AF0ADD /* PostViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		464E8EC51B07F2C800AF0ADD /* Facebook_Groups.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Facebook_Groups.xcdatamodel; sourceTree = "<group>"; };
 		464E8EC71B07F30700AF0ADD /* Group.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
 		464E8ECC1B07F90000AF0ADD /* CircularImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularImageView.swift; sourceTree = "<group>"; };
+		464E8ECE1B07FC1D00AF0ADD /* PostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				464E8E621B07EB2400AF0ADD /* Main.storyboard */,
 				464E8EB81B07EE6700AF0ADD /* GroupListViewController.swift */,
 				464E8EBA1B07EE6F00AF0ADD /* GroupViewController.swift */,
+				464E8ECE1B07FC1D00AF0ADD /* PostViewController.swift */,
 			);
 			name = Main;
 			sourceTree = "<group>";
@@ -197,6 +200,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				464E8ECF1B07FC1D00AF0ADD /* PostViewController.swift in Sources */,
 				464E8EBB1B07EE6F00AF0ADD /* GroupViewController.swift in Sources */,
 				464E8E811B07EBFD00AF0ADD /* LoginViewController.swift in Sources */,
 				464E8ECD1B07F90000AF0ADD /* CircularImageView.swift in Sources */,
