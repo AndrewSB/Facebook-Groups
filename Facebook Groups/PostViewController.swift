@@ -33,7 +33,7 @@ extension PostViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("cellID") as! UITableViewCell
         
-        cell.textLabel?.text = comments![indexPath.row].name
+        cell.textLabel?.text = comments![indexPath.row].description
         cell.detailTextLabel?.text = "sdf"
         
         return cell

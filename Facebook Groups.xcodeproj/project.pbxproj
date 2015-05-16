@@ -15,9 +15,11 @@
 		464E8EB91B07EE6700AF0ADD /* GroupListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464E8EB81B07EE6700AF0ADD /* GroupListViewController.swift */; };
 		464E8EBB1B07EE6F00AF0ADD /* GroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464E8EBA1B07EE6F00AF0ADD /* GroupViewController.swift */; };
 		464E8EC61B07F2C800AF0ADD /* Facebook_Groups.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 464E8EC41B07F2C800AF0ADD /* Facebook_Groups.xcdatamodeld */; };
-		464E8EC81B07F30700AF0ADD /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464E8EC71B07F30700AF0ADD /* Group.swift */; };
 		464E8ECD1B07F90000AF0ADD /* CircularImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464E8ECC1B07F90000AF0ADD /* CircularImageView.swift */; };
 		464E8ECF1B07FC1D00AF0ADD /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464E8ECE1B07FC1D00AF0ADD /* PostViewController.swift */; };
+		464E8ED31B07FDE400AF0ADD /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464E8ED01B07FDE400AF0ADD /* Comment.swift */; };
+		464E8ED41B07FDE400AF0ADD /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464E8ED11B07FDE400AF0ADD /* Group.swift */; };
+		464E8ED51B07FDE400AF0ADD /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464E8ED21B07FDE400AF0ADD /* Post.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,9 +33,11 @@
 		464E8EB81B07EE6700AF0ADD /* GroupListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupListViewController.swift; sourceTree = "<group>"; };
 		464E8EBA1B07EE6F00AF0ADD /* GroupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupViewController.swift; sourceTree = "<group>"; };
 		464E8EC51B07F2C800AF0ADD /* Facebook_Groups.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Facebook_Groups.xcdatamodel; sourceTree = "<group>"; };
-		464E8EC71B07F30700AF0ADD /* Group.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
 		464E8ECC1B07F90000AF0ADD /* CircularImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularImageView.swift; sourceTree = "<group>"; };
 		464E8ECE1B07FC1D00AF0ADD /* PostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
+		464E8ED01B07FDE400AF0ADD /* Comment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Comment.swift; path = "Facebook Groups.xcodeproj/../Comment.swift"; sourceTree = SOURCE_ROOT; };
+		464E8ED11B07FDE400AF0ADD /* Group.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Group.swift; path = "Facebook Groups.xcodeproj/../Group.swift"; sourceTree = SOURCE_ROOT; };
+		464E8ED21B07FDE400AF0ADD /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Post.swift; path = "Facebook Groups.xcodeproj/../Post.swift"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,8 +100,10 @@
 		464E8EBE1B07EF6F00AF0ADD /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				464E8EC71B07F30700AF0ADD /* Group.swift */,
 				464E8EC41B07F2C800AF0ADD /* Facebook_Groups.xcdatamodeld */,
+				464E8ED01B07FDE400AF0ADD /* Comment.swift */,
+				464E8ED11B07FDE400AF0ADD /* Group.swift */,
+				464E8ED21B07FDE400AF0ADD /* Post.swift */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -200,14 +206,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				464E8ED41B07FDE400AF0ADD /* Group.swift in Sources */,
 				464E8ECF1B07FC1D00AF0ADD /* PostViewController.swift in Sources */,
 				464E8EBB1B07EE6F00AF0ADD /* GroupViewController.swift in Sources */,
 				464E8E811B07EBFD00AF0ADD /* LoginViewController.swift in Sources */,
+				464E8ED31B07FDE400AF0ADD /* Comment.swift in Sources */,
 				464E8ECD1B07F90000AF0ADD /* CircularImageView.swift in Sources */,
 				464E8EC61B07F2C800AF0ADD /* Facebook_Groups.xcdatamodeld in Sources */,
-				464E8EC81B07F30700AF0ADD /* Group.swift in Sources */,
 				464E8EB91B07EE6700AF0ADD /* GroupListViewController.swift in Sources */,
 				464E8E5F1B07EB2400AF0ADD /* AppDelegate.swift in Sources */,
+				464E8ED51B07FDE400AF0ADD /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

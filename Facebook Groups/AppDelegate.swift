@@ -20,6 +20,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let i = NSEntityDescription.insertNewObjectForEntityForName("Group", inManagedObjectContext: self.managedObjectContext!) as! Group
         i.name = "fdsfsdsdfdsf"
         
+        let d = NSEntityDescription.insertNewObjectForEntityForName("Post", inManagedObjectContext: self.managedObjectContext!) as! Post
+        
         return true
     }
 
