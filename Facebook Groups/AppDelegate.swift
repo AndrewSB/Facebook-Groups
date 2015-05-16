@@ -16,9 +16,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-
-        let entity = NSEntityDescription.insertNewObjectForEntityForName("Group", inManagedObjectContext: self.managedObjectContext!) as! Group
-        entity.name = "lolGroup"
+        
+        let i = NSEntityDescription.insertNewObjectForEntityForName("Group", inManagedObjectContext: self.managedObjectContext!) as! Group
+        i.name = "fdsfsdsdfdsf"
         
         return true
     }

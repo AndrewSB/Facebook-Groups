@@ -10,9 +10,11 @@ import UIKit
 import CoreData
 
 class GroupListViewController: UIViewController {
+    @IBOutlet weak var groupTableView: UITableView!
+    
     var groups: [Group]? {
         didSet {
-            
+            groupTableView.reloadData()
         }
     }
 
@@ -21,8 +23,14 @@ class GroupListViewController: UIViewController {
         
         groups = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext!.executeFetchRequest(NSFetchRequest(entityName: "Group"), error: nil) as? [Group]
 
+        println(groups)
+        
+        groupTableView.dataSource = self
+        groupTableView.delegate = self
     }
 
+    @IBAction func logoutButtonWasHit(sender: AnyObject) {
+    }
     /*
     // MARK: - Navigation
 
@@ -37,13 +45,13 @@ class GroupListViewController: UIViewController {
 
 extension GroupListViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return groups == nil ? 0 : groups!.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("cellID") as! UITableViewCell
         
-        cell.textLabel?.text = "fds"
+        cell.textLabel?.text = groups![indexPath.row].name
         cell.detailTextLabel?.text = "sdf"
         
         return cell

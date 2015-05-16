@@ -9,11 +9,13 @@
 import UIKit
 
 class GroupViewController: UIViewController {
+    @IBOutlet weak var postTableView: UITableView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        postTableView.dataSource = self
+        postTableView.delegate = self
     }
 
     /*
@@ -27,3 +29,19 @@ class GroupViewController: UIViewController {
     */
 
 }
+
+extension GroupViewController: UITableViewDataSource, UITableViewDelegate {
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 5
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("cellID") as! UITableViewCell
+        
+        cell.textLabel?.text = "fds"
+        cell.detailTextLabel?.text = "sdf"
+        
+        return cell
+    }
+}
+

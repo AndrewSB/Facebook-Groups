@@ -47,6 +47,7 @@
 			isa = PBXGroup;
 			children = (
 				464E8E5B1B07EB2400AF0ADD /* Facebook Groups */,
+				464E8ECB1B07F5F800AF0ADD /* Library */,
 				464E8E5A1B07EB2400AF0ADD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -114,6 +115,13 @@
 				464E8EBF1B07EF7E00AF0ADD /* Main */,
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		464E8ECB1B07F5F800AF0ADD /* Library */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Library;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

@@ -20,10 +20,10 @@
             </objects>
             <point key="canvasLocation" x="-156" y="550"/>
         </scene>
-        <!--View Controller-->
+        <!--yo-->
         <scene sceneID="TMl-kS-nuV">
             <objects>
-                <viewController id="4zy-BE-kfB" sceneMemberID="viewController">
+                <viewController id="4zy-BE-kfB" customClass="GroupListViewController" customModule="Facebook_Groups" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="H2R-HS-Cd1"/>
                         <viewControllerLayoutGuide type="bottom" id="g6J-IL-Ahu"/>
@@ -70,19 +70,26 @@
                             <constraint firstAttribute="trailing" secondItem="GuR-Z0-ZW6" secondAttribute="trailing" id="y7U-tk-M8Z"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="jvp-xs-BAf">
-                        <barButtonItem key="leftBarButtonItem" title="Logout" id="rYm-GN-n9v"/>
+                    <navigationItem key="navigationItem" title="yo" id="jvp-xs-BAf">
+                        <barButtonItem key="leftBarButtonItem" title="Logout" id="rYm-GN-n9v">
+                            <connections>
+                                <action selector="logoutButtonWasHit:" destination="4zy-BE-kfB" id="92M-nU-YsD"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Add New Group" id="15S-re-hQ0"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="groupTableView" destination="GuR-Z0-ZW6" id="sqp-W5-FNk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g5b-AR-maV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="604" y="552"/>
         </scene>
-        <!--View Controller-->
+        <!--Group View Controller-->
         <scene sceneID="BuL-Hv-Kgi">
             <objects>
-                <viewController id="h0i-q2-n7H" sceneMemberID="viewController">
+                <viewController id="h0i-q2-n7H" customClass="GroupViewController" customModule="Facebook_Groups" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="6Pw-v4-OBd"/>
                         <viewControllerLayoutGuide type="bottom" id="eD6-9A-ZtX"/>
@@ -130,6 +137,9 @@
                         <barButtonItem key="leftBarButtonItem" title="Logout" id="tX3-AS-Vr8"/>
                         <barButtonItem key="rightBarButtonItem" title="Add New Group" id="Qaf-2z-v00"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="postTableView" destination="Uce-kJ-4h7" id="bT6-xr-nYj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wn5-Kr-3sf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
