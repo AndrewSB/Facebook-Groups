@@ -12,6 +12,7 @@
 		464E8E691B07EB2400AF0ADD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 464E8E671B07EB2400AF0ADD /* LaunchScreen.xib */; };
 		464E8E7F1B07EBC200AF0ADD /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 464E8E7E1B07EBC200AF0ADD /* Login.storyboard */; };
 		464E8E811B07EBFD00AF0ADD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464E8E801B07EBFD00AF0ADD /* LoginViewController.swift */; };
+		464E8EB51B07ED3B00AF0ADD /* Facebook_Groups.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 464E8EB41B07ED3B00AF0ADD /* Facebook_Groups.xcdatamodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		464E8E681B07EB2400AF0ADD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		464E8E7E1B07EBC200AF0ADD /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		464E8E801B07EBFD00AF0ADD /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		464E8EB41B07ED3B00AF0ADD /* Facebook_Groups.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Facebook_Groups.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		464E8E5B1B07EB2400AF0ADD /* Facebook Groups */ = {
 			isa = PBXGroup;
 			children = (
+				464E8EB41B07ED3B00AF0ADD /* Facebook_Groups.xcdatamodel */,
 				464E8E5E1B07EB2400AF0ADD /* AppDelegate.swift */,
 				464E8E821B07EC0100AF0ADD /* Login */,
 				464E8E621B07EB2400AF0ADD /* Main.storyboard */,
@@ -150,6 +153,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				464E8EB51B07ED3B00AF0ADD /* Facebook_Groups.xcdatamodel in Sources */,
 				464E8E811B07EBFD00AF0ADD /* LoginViewController.swift in Sources */,
 				464E8E5F1B07EB2400AF0ADD /* AppDelegate.swift in Sources */,
 			);
