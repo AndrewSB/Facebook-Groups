@@ -4,6 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
@@ -198,7 +199,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="X2A-dQ-agL">
-                        <barButtonItem key="rightBarButtonItem" title="Add New Group" id="Qaf-2z-v00"/>
+                        <barButtonItem key="rightBarButtonItem" title="Add New Post" id="Qaf-2z-v00">
+                            <connections>
+                                <segue destination="Qd7-sw-y06" kind="presentation" id="nir-fw-7Ge"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="postTableView" destination="Uce-kJ-4h7" id="bT6-xr-nYj"/>
@@ -207,6 +212,77 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wn5-Kr-3sf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1339" y="552"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="EvO-1M-CAr">
+            <objects>
+                <viewController id="Qd7-sw-y06" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="p3u-jG-pEK"/>
+                        <viewControllerLayoutGuide type="bottom" id="6XO-9J-Asv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="byb-fl-EpC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="en3-p9-hXE">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="1KP-02-h1Y"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem title="Title" id="Fud-Xv-q1s"/>
+                                </items>
+                            </navigationBar>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m6c-vk-IPh">
+                                <rect key="frame" x="38" y="108" width="524" height="200"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="3Fr-7U-sx5">
+                                <rect key="frame" x="22" y="352" width="556" height="100"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="TKN-DC-63l"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="swc-yB-bEN">
+                                    <size key="itemSize" width="69" height="69"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cellID" id="1WP-KS-F97">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="69" height="69"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="3Fr-7U-sx5" firstAttribute="height" secondItem="m6c-vk-IPh" secondAttribute="height" multiplier="0.5" id="9UZ-Wl-bhw"/>
+                            <constraint firstItem="m6c-vk-IPh" firstAttribute="leading" secondItem="byb-fl-EpC" secondAttribute="leadingMargin" constant="22" id="GJG-EK-bUH"/>
+                            <constraint firstItem="en3-p9-hXE" firstAttribute="leading" secondItem="byb-fl-EpC" secondAttribute="leading" id="LMW-fL-MF8"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="m6c-vk-IPh" secondAttribute="trailing" constant="22" id="OlW-JJ-oVR"/>
+                            <constraint firstItem="3Fr-7U-sx5" firstAttribute="top" secondItem="m6c-vk-IPh" secondAttribute="bottom" constant="44" id="X1S-Jk-GP5"/>
+                            <constraint firstAttribute="trailing" secondItem="3Fr-7U-sx5" secondAttribute="trailing" constant="22" id="Xuy-Pp-g1a"/>
+                            <constraint firstItem="m6c-vk-IPh" firstAttribute="top" secondItem="en3-p9-hXE" secondAttribute="bottom" constant="44" id="cun-Cm-1en"/>
+                            <constraint firstItem="en3-p9-hXE" firstAttribute="top" secondItem="p3u-jG-pEK" secondAttribute="bottom" constant="-20" id="eqP-fn-grH"/>
+                            <constraint firstAttribute="trailing" secondItem="en3-p9-hXE" secondAttribute="trailing" id="h7e-en-oGx"/>
+                            <constraint firstItem="3Fr-7U-sx5" firstAttribute="leading" secondItem="byb-fl-EpC" secondAttribute="leading" constant="22" id="qTY-Yk-11s"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E02-rS-rrZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1322" y="1268"/>
         </scene>
         <!--Post View Controller-->
         <scene sceneID="DNY-yg-o78">
