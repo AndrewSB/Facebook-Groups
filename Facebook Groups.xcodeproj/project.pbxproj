@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		14128D891B1031C300AE82EA /* AddPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14128D881B1031C300AE82EA /* AddPostViewController.swift */; };
 		464E8E5F1B07EB2400AF0ADD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464E8E5E1B07EB2400AF0ADD /* AppDelegate.swift */; };
 		464E8E641B07EB2400AF0ADD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 464E8E621B07EB2400AF0ADD /* Main.storyboard */; };
 		464E8E691B07EB2400AF0ADD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 464E8E671B07EB2400AF0ADD /* LaunchScreen.xib */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		14128D881B1031C300AE82EA /* AddPostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPostViewController.swift; sourceTree = "<group>"; };
 		464E8E591B07EB2400AF0ADD /* Facebook Groups.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Facebook Groups.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		464E8E5D1B07EB2400AF0ADD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		464E8E5E1B07EB2400AF0ADD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				464E8E621B07EB2400AF0ADD /* Main.storyboard */,
+				14128D881B1031C300AE82EA /* AddPostViewController.swift */,
 				464E8ED61B07FEF400AF0ADD /* AddGroupTableViewController.swift */,
 				464E8EB81B07EE6700AF0ADD /* GroupListViewController.swift */,
 				464E8EBA1B07EE6F00AF0ADD /* GroupViewController.swift */,
@@ -216,6 +219,7 @@
 				464E8ED41B07FDE400AF0ADD /* Group.swift in Sources */,
 				464E8ECF1B07FC1D00AF0ADD /* PostViewController.swift in Sources */,
 				464E8ED91B08019500AF0ADD /* ArrayExtension.swift in Sources */,
+				14128D891B1031C300AE82EA /* AddPostViewController.swift in Sources */,
 				464E8EBB1B07EE6F00AF0ADD /* GroupViewController.swift in Sources */,
 				464E8E811B07EBFD00AF0ADD /* LoginViewController.swift in Sources */,
 				464E8ED31B07FDE400AF0ADD /* Comment.swift in Sources */,
@@ -369,6 +373,7 @@
 				464E8E7A1B07EB2400AF0ADD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

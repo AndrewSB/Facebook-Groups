@@ -213,10 +213,10 @@
             </objects>
             <point key="canvasLocation" x="1339" y="552"/>
         </scene>
-        <!--View Controller-->
+        <!--Add Post View Controller-->
         <scene sceneID="EvO-1M-CAr">
             <objects>
-                <viewController id="Qd7-sw-y06" sceneMemberID="viewController">
+                <viewController id="Qd7-sw-y06" customClass="AddPostViewController" customModule="Facebook_Groups" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="p3u-jG-pEK"/>
                         <viewControllerLayoutGuide type="bottom" id="6XO-9J-Asv"/>
@@ -225,20 +225,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="en3-p9-hXE">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="64"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="64" id="1KP-02-h1Y"/>
-                                </constraints>
-                                <items>
-                                    <navigationItem title="Title" id="Fud-Xv-q1s"/>
-                                </items>
-                            </navigationBar>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m6c-vk-IPh">
                                 <rect key="frame" x="38" y="108" width="524" height="200"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <real key="value" value="0.69999999999999996"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
+                                        <color key="value" red="0.75950915404040398" green="0.75950915404040398" blue="0.75950915404040398" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </textView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="3Fr-7U-sx5">
                                 <rect key="frame" x="22" y="352" width="556" height="100"/>
@@ -253,17 +252,69 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cellID" id="1WP-KS-F97">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="newCell" id="1WP-KS-F97">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="69" height="69"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zat-0m-C6T">
+                                                    <rect key="frame" x="27" y="10" width="15" height="50"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="50" id="aEL-Ah-J4y"/>
+                                                        <constraint firstAttribute="width" constant="15" id="bSa-qc-l2P"/>
+                                                    </constraints>
+                                                </view>
+                                                <view opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8ue-2h-vUh">
+                                                    <rect key="frame" x="10" y="27" width="50" height="15"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="15" id="8BX-wz-sdP"/>
+                                                        <constraint firstAttribute="width" constant="50" id="LYd-Fy-Wds"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="centerY" secondItem="8ue-2h-vUh" secondAttribute="centerY" id="3sX-9e-Xlr"/>
+                                            <constraint firstAttribute="centerY" secondItem="zat-0m-C6T" secondAttribute="centerY" id="AWl-1g-klm"/>
+                                            <constraint firstAttribute="centerX" secondItem="8ue-2h-vUh" secondAttribute="centerX" id="cCT-I0-nVr"/>
+                                            <constraint firstAttribute="centerX" secondItem="zat-0m-C6T" secondAttribute="centerX" id="gR6-P8-H0U"/>
+                                        </constraints>
+                                    </collectionViewCell>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="photo" id="eiM-wh-BQ8">
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="69" height="69"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
-                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="en3-p9-hXE">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="1KP-02-h1Y"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem title="Add New Post" id="Fud-Xv-q1s">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="nHE-Yh-aXV">
+                                            <connections>
+                                                <segue destination="zkI-fh-MCg" kind="unwind" unwindAction="unwindToGroupList:" id="gN6-Rj-b1m"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="v1B-CK-lCY" userLabel="Bar Button Item">
+                                            <connections>
+                                                <action selector="doneButtonWasHit:" destination="Qd7-sw-y06" id="JpA-PD-REx"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -279,8 +330,14 @@
                             <constraint firstItem="3Fr-7U-sx5" firstAttribute="leading" secondItem="byb-fl-EpC" secondAttribute="leading" constant="22" id="qTY-Yk-11s"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="commentTextView" destination="m6c-vk-IPh" id="5qt-i2-mIp"/>
+                        <outlet property="photoCollectionView" destination="3Fr-7U-sx5" id="aDq-b0-ed0"/>
+                        <segue destination="zkI-fh-MCg" kind="unwind" identifier="unwindToGroupList" unwindAction="unwindToGroupList:" id="3Pg-yl-5rQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E02-rS-rrZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="zkI-fh-MCg" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1322" y="1268"/>
         </scene>
